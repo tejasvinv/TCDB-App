@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Stats</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Calibri, sans-serif;
+    }
+    
+    .container {
+      width: 375px;
+      height: 812px;
+      position: relative;
+      background: white;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    
+    /* Header */
+    .header {
+      width: 375px;
+      height: 44px;
+      background: #C6491A;
+      overflow: hidden;
+    }
+    
+    .logo {
+      width: 99px;
+      height: 40px;
+      margin: 2px 0 0 7px;
+    }
+    
+    /* Navigation Tabs */
+    .nav-tabs {
+      width: 350px;
+      height: 19px;
+      margin: 18px 0 0 16px;
+      background: #D9D9D9;
+      display: flex;
+      align-items: center;
+      padding: 0 5px;
+    }
+    
+    .nav-item {
+      color: black;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 0 10px;
+    }
+    
+    /* Stats Title */
+    .stats-title {
+      margin: 20px 0 0 16px;
+      color: #C6491A;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+    
+    /* Stats Table */
+    .stats-table {
+      width: 340px;
+      margin: 8px 0 0 16px;
+    }
+    
+    .table-header {
+      height: 20px;
+      background: #D9D9D9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5px;
+    }
+    
+    .table-row {
+      height: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5px;
+    }
+    
+    .table-row:nth-child(odd) {
+      background: white;
+    }
+    
+    .table-row:nth-child(even) {
+      background: #D9D9D9;
+    }
+    
+    .cell {
+      font-size: 10px;
+      line-height: 20px;
+    }
+    
+    .cell-category {
+      width: 70px;
+      text-align: left;
+    }
+    
+    .cell-total {
+      width: 52px;
+      text-align: center;
+    }
+    
+    .bold {
+      font-weight: 700;
+    }
+    
+    .total-row {
+      background: white !important;
+      font-weight: 700;
+    }
+    
+    /* Bottom Navigation */
+    .bottom-nav {
+      width: 375px;
+      height: 56px;
+      background: #C6491A;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .nav-icon {
+      width: 42px;
+      height: 36px;
+      background: #F5C518;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .nav-icon img {
+      width: 28px;
+      height: 22px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img class="logo" src="https://placehold.co/99x40?text=Logo" alt="Logo">
+    </div>
+    
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs">
+      <span class="nav-item">📊 Stats</span>
+      <span class="nav-item">📈 Specific Stats</span>
+    </div>
+    
+    <!-- Stats Title -->
+    <div class="stats-title">Stats</div>
+    
+    <!-- Stats Table -->
+    <div class="stats-table">
+      <div class="table-header">
+        <span class="cell cell-category bold">Category</span>
+        <span class="cell cell-total bold">Total Cards</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Baseball</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Basketball</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Boxing</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Cricket</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Football</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Gaming</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Golf</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Hockey</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Misc Sports</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">MMA</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Multi-sport</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Non-sport</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Racing</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Soccer</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Tennis</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row">
+        <span class="cell cell-category">Wrestling</span>
+        <span class="cell cell-total">-1</span>
+      </div>
+      
+      <div class="table-row total-row">
+        <span class="cell cell-category bold">Total</span>
+        <span class="cell cell-total bold">-1</span>
+      </div>
+    </div>
+    
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <div class="nav-icon">
+        <img src="https://placehold.co/28x22?text=📁" alt="Collections">
+      </div>
+      <img src="https://placehold.co/28x29?text=📊" alt="Stats">
+      <img src="https://placehold.co/40x30?text=🏆" alt="Rewards">
+      <img src="https://placehold.co/28x22?text=⚙️" alt="Settings">
+    </div>
+  </div>
+</body>
+</html>
+
